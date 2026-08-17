@@ -85,3 +85,39 @@ select.form-input option {
   justify-content: center;
   margin-top: 1rem;
 }
+
+
+{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.toast {
+  background: var(--bg-card);
+  border: 1px solid var(--accent-purple);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.5rem;
+  color: var(--text-main);
+  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  animation: slideIn 0.3s ease forwards;
+  backdrop-filter: blur(16px);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
