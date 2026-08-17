@@ -1,0 +1,30 @@
+{
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: var(--transition-fast);
+}
+
+.info-card:hover {
+  border-color: var(--border-glow);
+  transform: translateY(-3px);
+}
+
+.info-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.info-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
